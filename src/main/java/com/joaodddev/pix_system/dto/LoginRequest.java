@@ -1,4 +1,7 @@
 package com.joaodddev.pix_system.dto;
 
-public class LoginRequest {
+public record LoginRequest(
+    String email,
+    String password
+) {
 }
