@@ -3,12 +3,14 @@ package com.joaodddev.pix_system.controller;
 import com.joaodddev.pix_system.dto.LoginRequest;
 import com.joaodddev.pix_system.dto.LoginResponse;
 import com.joaodddev.pix_system.security.AuthService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
+@Valid
 public class AuthController {
 
     private final AuthService authService;
